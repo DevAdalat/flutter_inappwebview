@@ -77,7 +77,7 @@
             window.location = "#foo-" + randomNumber;
         }
 
-        window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+        window.addEventListener("efileAppReady", function(event) {
             window.flutter_inappwebview.callHandler('handlerFoo').then(function(result) {
                 window.flutter_inappwebview.callHandler('handlerFooWithArgs', 1, true, ['bar', 5], {foo: 'baz'}, result).then(function(result) {
 

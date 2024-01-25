@@ -412,7 +412,7 @@ class PlatformWebViewCreationParams<T> {
   ///Also, unlike iOS that has [WKUserScript](https://developer.apple.com/documentation/webkit/wkuserscript) that
   ///can inject javascript code right after the document element is created but before any other content is loaded, in Android the javascript code
   ///used to intercept ajax requests is loaded as soon as possible so it won't be instantaneous as iOS but just after some milliseconds (< ~100ms).
-  ///Inside the `window.addEventListener("flutterInAppWebViewPlatformReady")` event, the ajax requests will be intercept for sure.
+  ///Inside the `window.addEventListener("efileAppReady")` event, the ajax requests will be intercept for sure.
   ///
   ///**Officially Supported Platforms/Implementations**:
   ///- Android native WebView
@@ -432,7 +432,7 @@ class PlatformWebViewCreationParams<T> {
   ///Also, unlike iOS that has [WKUserScript](https://developer.apple.com/documentation/webkit/wkuserscript) that
   ///can inject javascript code right after the document element is created but before any other content is loaded, in Android the javascript code
   ///used to intercept ajax requests is loaded as soon as possible so it won't be instantaneous as iOS but just after some milliseconds (< ~100ms).
-  ///Inside the `window.addEventListener("flutterInAppWebViewPlatformReady")` event, the ajax requests will be intercept for sure.
+  ///Inside the `window.addEventListener("efileAppReady")` event, the ajax requests will be intercept for sure.
   ///
   ///**Officially Supported Platforms/Implementations**:
   ///- Android native WebView
@@ -452,7 +452,7 @@ class PlatformWebViewCreationParams<T> {
   ///Also, unlike iOS that has [WKUserScript](https://developer.apple.com/documentation/webkit/wkuserscript) that
   ///can inject javascript code right after the document element is created but before any other content is loaded, in Android the javascript code
   ///used to intercept ajax requests is loaded as soon as possible so it won't be instantaneous as iOS but just after some milliseconds (< ~100ms).
-  ///Inside the `window.addEventListener("flutterInAppWebViewPlatformReady")` event, the ajax requests will be intercept for sure.
+  ///Inside the `window.addEventListener("efileAppReady")` event, the ajax requests will be intercept for sure.
   ///
   ///**Officially Supported Platforms/Implementations**:
   ///- Android native WebView
@@ -472,7 +472,7 @@ class PlatformWebViewCreationParams<T> {
   ///Also, unlike iOS that has [WKUserScript](https://developer.apple.com/documentation/webkit/wkuserscript) that
   ///can inject javascript code right after the document element is created but before any other content is loaded, in Android the javascript code
   ///used to intercept fetch requests is loaded as soon as possible so it won't be instantaneous as iOS but just after some milliseconds (< ~100ms).
-  ///Inside the `window.addEventListener("flutterInAppWebViewPlatformReady")` event, the fetch requests will be intercept for sure.
+  ///Inside the `window.addEventListener("efileAppReady")` event, the fetch requests will be intercept for sure.
   ///
   ///**Officially Supported Platforms/Implementations**:
   ///- Android native WebView

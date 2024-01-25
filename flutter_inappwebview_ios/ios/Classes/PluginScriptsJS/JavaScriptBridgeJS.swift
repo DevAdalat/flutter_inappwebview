@@ -7,7 +7,7 @@
 
 import Foundation
 
-let JAVASCRIPT_BRIDGE_NAME = "flutter_inappwebview"
+let JAVASCRIPT_BRIDGE_NAME = "efile_app"
 let JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPT_GROUP_NAME = "IN_APP_WEBVIEW_JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPT"
 
 let JAVASCRIPT_BRIDGE_JS_PLUGIN_SCRIPT = PluginScript(
@@ -33,7 +33,7 @@ window.\(JAVASCRIPT_BRIDGE_NAME).callHandler = function() {
 \(UTIL_JS_SOURCE)
 """
 
-let PLATFORM_READY_JS_SOURCE = "window.dispatchEvent(new Event('flutterInAppWebViewPlatformReady'));";
+let PLATFORM_READY_JS_SOURCE = "window.dispatchEvent(new Event('efileAppReady'));";
 
 let JAVASCRIPT_UTIL_VAR_NAME = "window.\(JAVASCRIPT_BRIDGE_NAME)._Util"
 

@@ -634,10 +634,10 @@ abstract class PlatformInAppWebViewController extends PlatformInterface
   ///The JavaScript function that can be used to call the handler is `window.flutter_inappwebview.callHandler(handlerName <String>, ...args)`, where `args` are [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
   ///The `args` will be stringified automatically using `JSON.stringify(args)` method and then they will be decoded on the Dart side.
   ///
-  ///In order to call `window.flutter_inappwebview.callHandler(handlerName <String>, ...args)` properly, you need to wait and listen the JavaScript event `flutterInAppWebViewPlatformReady`.
+  ///In order to call `window.flutter_inappwebview.callHandler(handlerName <String>, ...args)` properly, you need to wait and listen the JavaScript event `efileAppReady`.
   ///This event will be dispatched as soon as the platform (Android or iOS) is ready to handle the `callHandler` method.
   ///```javascript
-  ///   window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+  ///   window.addEventListener("efileAppReady", function(event) {
   ///     console.log("ready");
   ///   });
   ///```
@@ -649,7 +649,7 @@ abstract class PlatformInAppWebViewController extends PlatformInterface
   ///So, on the JavaScript side, to get data coming from the Dart side, you will use:
   ///```html
   ///<script>
-  ///   window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+  ///   window.addEventListener("efileAppReady", function(event) {
   ///     window.flutter_inappwebview.callHandler('handlerFoo').then(function(result) {
   ///       console.log(result);
   ///     });

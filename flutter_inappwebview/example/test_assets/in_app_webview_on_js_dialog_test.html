@@ -9,7 +9,7 @@
     <body>
         <h1>InAppWebViewOnJsDialogTest</h1>
         <script>
-            window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+            window.addEventListener("efileAppReady", function(event) {
                 alert("alert message");
                 window.flutter_inappwebview.callHandler('confirm', confirm("confirm message"));
                 window.flutter_inappwebview.callHandler('prompt', prompt("prompt message", "prompt default value"));

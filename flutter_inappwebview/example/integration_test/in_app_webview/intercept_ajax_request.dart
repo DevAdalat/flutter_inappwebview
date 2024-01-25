@@ -36,7 +36,7 @@ void interceptAjaxRequest() {
     <body>
         <h1>InAppWebViewAjaxTest</h1>
         <script>
-          window.addEventListener('flutterInAppWebViewPlatformReady', function(event) {
+          window.addEventListener('efileAppReady', function(event) {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "http://${environment["NODE_SERVER_IP"]}:8082/test-ajax-post");
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -118,7 +118,7 @@ void interceptAjaxRequest() {
     <body>
         <h1>InAppWebViewAjaxTest</h1>
         <script>
-          window.addEventListener('flutterInAppWebViewPlatformReady', function(event) {
+          window.addEventListener('efileAppReady', function(event) {
             var jsonData = {
               firstname: 'Foo',
               lastname: 'Bar'
@@ -207,7 +207,7 @@ void interceptAjaxRequest() {
     <body>
         <h1>InAppWebViewAjaxTest</h1>
         <script>
-          window.addEventListener('flutterInAppWebViewPlatformReady', function(event) {
+          window.addEventListener('efileAppReady', function(event) {
             var paramsString = "firstname=Foo&lastname=Bar";
             var searchParams = new URLSearchParams(paramsString);
             var xhttp = new XMLHttpRequest();
@@ -291,7 +291,7 @@ void interceptAjaxRequest() {
     <body>
         <h1>InAppWebViewAjaxTest</h1>
         <script>
-          window.addEventListener('flutterInAppWebViewPlatformReady', function(event) {
+          window.addEventListener('efileAppReady', function(event) {
             var formData = new FormData();
             formData.append('firstname', 'Foo');
             formData.append('lastname', 'Bar');
